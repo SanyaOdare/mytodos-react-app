@@ -7,7 +7,7 @@ const Form = ({ input, setInput, todos, setTodos, editTodo, setEditTodo }) => {
       todo.id === id ? { title, id, completed } : todo
     )
     setTodos(newTodo);
-    setEditTodo('');
+    setEditTodo("")
   };
 
   useEffect(() => {
@@ -45,7 +45,7 @@ const Form = ({ input, setInput, todos, setTodos, editTodo, setEditTodo }) => {
         onChange={onInputChange}
       />
       <button className="add-button" type="submit">
-        { editTodo ? "OK" : "Add" }
+        { editTodo ? "OK" : <i className='fa fa-add'></i> }
       </button>
     </form>
   );

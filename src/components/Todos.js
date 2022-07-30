@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Todos = ({ todos, setTodos, setEditTodo}) => {
+const Todos = ({ todos, setTodos, setEditTodo }) => {
   // Handle Completed Todo
   const handleComplete = (todo) => {
     setTodos(
@@ -37,17 +37,17 @@ const Todos = ({ todos, setTodos, setEditTodo}) => {
           />
           <div>
             <button 
-              className="complete-button todo-button"
+              className="complete-button"
               onClick={() => handleComplete()}>
                 <i className='fa fa-check-circle'></i>
             </button>
             <button 
-              className="edit-button todo-button"
+              className="edit-button"
               onClick={() => handleEdit(todo)}>
                 <i className='fa fa-edit'></i>
             </button>
             <button 
-              className='delete-button todo-button' 
+              className='delete-button' 
               onClick={handleDelete(todo)}>
                 <i className='fa fa-trash'></i>
             </button>
