@@ -3,6 +3,7 @@ import Todos from './components/Todos';
 
 function App() {
   const localStorageData = JSON.parse(localStorage.getItem('Tasks'));
+
   const [todo, setTodo] = useState('');
   const [todos, setTodos] = useState(localStorageData);
 
@@ -18,15 +19,15 @@ function App() {
   };
 
   const deleteTodo = (id) => {
-    const filteredItems = todos.filter((todoItem, index) => {
+    const filteredItems = todos.filter((_todoItem, index) => {
       return index !== id;
     });
     setTodos(filteredItems);
   };
 
   const updateTodo = (id) => {
-    const filteredItem = todos.filter((todoItem, index) => {
-      return index == id;
+    const filteredItem = todos.filter((_todoItem, index) => {
+      return index === id;
     });
     setTodo(filteredItem)
     deleteTodo(id);
