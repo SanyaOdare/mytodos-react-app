@@ -53,6 +53,7 @@ body {
   background-color: #f1af71;
   border: 0;
   border-radius: 10px;
+  cursor: pointer;
   font-size: 1.25rem;
   padding: 15px 15px;
 }
@@ -62,7 +63,7 @@ body {
   border-radius: 10px;
   display: flex;
   margin: 20px 0;
-  max-height: 30px;
+  /* max-height: 30px; */
   padding: 10px;
 }
 
@@ -92,7 +93,7 @@ body {
   margin-right: 10px;
 }
 
-.complete {
+.complete-button {
   opacity: 0.6;
   text-decoration-color: #ff6c6c;
   text-decoration-line: line-through;
